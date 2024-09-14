@@ -7,7 +7,7 @@ function App() {
   let [isloading,setIsLoading] = useState(false);
   let getData=(event)=>{
     setIsLoading(true)
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=837293248d46d55aa3b08428e7f42351&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={}&units=metric`)
     .then((res)=>res.json())
     .then((finalres)=>{
       // console.log(finalres)
